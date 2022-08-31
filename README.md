@@ -2,6 +2,8 @@
 
 My first completed app using React with Typescript and Redux Toolkit to manage app state. All the app was developed in Vite.tsx
 
+Deploy: https://notes-app-marcos-iorio.vercel.app/
+
 Technologies used: 
  - React
  - Typescript
@@ -26,3 +28,4 @@ npm run dev
 
 Future updates: 
 - Edit notes
+- Responsive Design
