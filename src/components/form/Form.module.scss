@@ -1,0 +1,39 @@
+.form {
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 100%;
+
+  .input{
+    background: #333;
+    color: white !important;
+    border-radius: 5px;
+  }
+
+  .add-button {
+    border: 1px solid white;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    width: 100%;
+    /* border: none !important; */
+    box-shadow: none !important;
+    outline: none !important;
+    margin-top: auto;
+    color: white;
+  }
+
+  .add-button:hover{
+    border: 1px solid transparent;
+    background: white;
+    color: #333;
+  }
+
+  .add-button:disabled{
+    border: 1px solid #555;
+    color: #555;
+    background: none !important;
+  }
+}

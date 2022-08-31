@@ -1,0 +1,165 @@
+.note-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transform: rotate3d(2, 20, 1, 40deg) !important;
+  transition: transform 0.3s;
+  background-color: #333;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  .note-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+  
+    .note-title {
+      position: relative;
+      margin: 0;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      word-break: break-word;
+      letter-spacing: 2px;
+    }
+  
+    .note-categorie {
+      font-size: 0.75rem;
+      color: gray;
+      font-weight: bold;
+    }
+  
+    .note-text {
+      font-size: 1.2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0;
+    }
+  
+    .time {
+      margin-top: auto;
+      font-size: 0.75rem;
+      color: gray;
+    }
+  }
+}
+
+.note-card:hover {
+    transform: rotate3d(0, 0, 0, 0deg) !important;
+}
+
+.supermarket{
+    border: 1.5px solid #4158d0;
+}
+
+.future{
+    border: 1.5px solid #c850c0;
+}
+
+.studies{
+    border: 1.5px solid #ffcc70;
+}
+
+
+.delete-note {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  width: fit-content;
+  border: none;
+  outline: none;
+
+  svg {
+    color: gray;
+    width: 90%;
+    transition: color 0.3s;
+  }
+}
+
+.delete-note:hover svg {
+  color: crimson;
+  transition: color 0.3s;
+}
+
+.delete-note:hover {
+  border: none;
+}
+
+.overlay{
+    background: rgba(51, 51, 51, 0.479);
+    position: absolute;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    height: 100vh;   
+    width: 100vw;
+    z-index: 1;
+
+}
+
+.opened-card {
+    border-radius: 15px;
+    cursor: pointer;
+    height: calc(100% - 10rem);
+    width: 40rem;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #333;
+    backdrop-filter: blur(3px);
+
+    .note-info {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      
+        .note-title {
+          position: relative;
+          margin: 0;
+          margin-top: 20px;
+          font-size: 2rem;
+          word-break: break-all;
+          letter-spacing: 2px;
+        }
+      
+        .note-categorie {
+          font-size: 0.75rem;
+          color: gray;
+          font-weight: bold;
+        }
+      
+        .note-text {
+          font-size: 1.2rem;
+          white-space: normal;
+          word-wrap: break-word;
+          margin: 0;
+          height: 36rem;
+        }
+
+        .time {
+            margin-top: auto;
+            font-size: 0.75rem;
+            color: gray;
+            height: fit-content;
+          }
+
+        .delete-button{
+          margin-top: auto;
+          height: fit-content;
+        }
+    }
+}
