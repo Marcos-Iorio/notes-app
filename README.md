@@ -26,3 +26,4 @@ npm run dev
 
 Future updates: 
 - Edit notes
+- Responsive Design
