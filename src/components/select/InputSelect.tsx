@@ -34,7 +34,6 @@ const InputSelect = (props: ChangeProps) => {
           error={props.error}
           helperText={props.error ? "Please select a categorie!" : ""}
           className={styles.select}
-          id="demo-simple-select"
           label="Categories"
           variant="outlined"
           defaultValue="all"

@@ -76,7 +76,7 @@ const NotesContainer = () => {
           ) : (
             <div className={styles.notFoundWrapper}>
               <p className={styles.notFound}>Nothing to see here!</p>
-              <img src="./undraw_Add_notes_re_ln36 (1).svg" className={styles.notFoundImage}/>
+              <img src="./undraw_Add_notes_re_ln36 (1).svg" alt="Image illustrating not Notes were founded." className={styles.notFoundImage}/>
             </div>
           )}
         </section>
