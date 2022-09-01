@@ -10,7 +10,7 @@ const FormContainer = () => {
 
     return(
         <Fragment>
-          <h1 >Start writing a Note!</h1>
+          <h1>Start writing a Note!</h1>
             <Card variant='outlined' className={styles.form__wrapper} sx={{height: '35em'}}>
                 <Form/>
             </Card>
