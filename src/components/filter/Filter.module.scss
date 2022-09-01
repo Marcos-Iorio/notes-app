@@ -8,3 +8,9 @@
       justify-self: center;
     }
   }
+
+@media(max-width: 768px){
+  .filter_wrapper{
+    width: 100%;
+  }
+}
