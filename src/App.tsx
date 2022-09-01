@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <Box sx={{ width: "100vw", height: "100%"}}>
+    <Box sx={{ width: "100vw", height: "100%", backgroundColor: '#242424'}} >
       {notification && (
         <Notification
           status={notification.status}
